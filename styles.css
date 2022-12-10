@@ -1,0 +1,137 @@
+body, button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+article {
+  margin-top: 10%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 1.8rem;
+}
+
+.icon {
+  margin-left: 2rem;
+  margin-top: 10%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-parent {
+  display: flex;
+  flex-direction: row;
+  background: red;
+  border-radius: 8px;
+  width: 65%;
+  height: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  justify-items: center;
+}
+
+.block {
+  background-color: green;
+  position: relative;
+}
+.block button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+  border-style: none;
+  border-radius: 25px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sedan {
+  background: hsl(31deg, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.sedan button {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.SUV {
+  background: hsl(184deg, 100%, 22%);
+  min-width: 15rem;
+}
+.SUV button {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179deg, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.luxury button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+@media only screen and (max-width: 800px) {
+  .car-parent {
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 70%;
+  }
+  .block {
+    min-height: 28rem;
+  }
+  .block h1 {
+    margin-bottom: 2rem;
+  }
+  .block p {
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  .block button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .sedan {
+    background: hsl(31deg, 77%, 52%);
+    border-radius: 8px 8px 0 0;
+  }
+  .SUV {
+    background: hsl(184deg, 100%, 22%);
+    min-width: 15rem;
+  }
+  .SUV button {
+    color: hsl(184deg, 100%, 22%);
+  }
+  .luxury {
+    background: hsl(179deg, 100%, 13%);
+    border-radius: 0 0 8px 8px;
+  }
+  .luxury button {
+    color: hsl(179deg, 100%, 13%);
+  }
+  article {
+    font-size: 15px;
+    line-height: 1.2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

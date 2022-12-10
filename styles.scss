@@ -1,0 +1,158 @@
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$darkblue: hsl(179, 100%, 13%);
+
+$para: hsla(0, 0%, 100%, 0.75);
+$white: hsl(0, 0%, 95%); //buttons, headings, backgrounds
+
+
+body, button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+body{
+    color: $para;
+}
+
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    
+    font-size: 40px;
+    font-weight: 700;
+    color:$white;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+article{
+    margin-top: 10%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 1.8rem;
+}
+
+.icon{
+    margin-left: 2rem;
+    margin-top: 10%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-parent{
+    display: flex;
+    flex-direction: row;
+    background: red;
+    border-radius: 8px;
+    width: 65%;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10rem;
+    justify-items: center;
+}
+
+.block{
+    background-color: green;
+    position: relative;
+    button{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-left: 2rem;
+        margin-bottom: 2.5rem;
+        border-style: none;
+        border-radius: 25px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+}
+
+
+
+.sedan{
+    background: $orange;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    button {
+        color: $orange;
+    }
+}
+
+.SUV{
+    background: $cyan;
+    min-width: 15rem;
+    button {
+        color: $cyan;
+    }
+}
+
+.luxury{
+    background: $darkblue;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    button {
+        color: $darkblue;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .car-parent{
+        flex-direction: column;
+        margin-top: 4rem;
+        width: 70%;
+    }
+    .block{
+        min-height: 28rem;
+
+        h1{
+            margin-bottom: 2rem;
+        }
+        p {
+            line-height: 2rem;
+            margin-bottom: 0;
+        }
+        button{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .sedan{
+        background: $orange;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .SUV{
+        background: $cyan;
+        min-width: 15rem;
+        button {
+            color: $cyan;
+        }
+    }
+    
+    .luxury{
+        background: $darkblue;
+        border-radius: 0 0 8px 8px;
+        button {
+            color: $darkblue;
+        }
+    }
+
+    article {
+        font-size: 15px;
+        line-height: 1.2rem;
+    }
+}
+// <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+// <style>
+//   .attribution { font-size: 11px; text-align: center; }
+//   .attribution a { color: hsl(228, 45%, 44%); }
+// </style>
