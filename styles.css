@@ -24,6 +24,13 @@ article {
   line-height: 1.8rem;
 }
 
+.attribution {
+  position: absolute;
+  bottom: 2%;
+  left: 35%;
+  color: red;
+}
+
 .icon {
   margin-left: 2rem;
   margin-top: 10%;
@@ -147,5 +154,12 @@ article {
   article {
     font-size: 15px;
     line-height: 1.2rem;
+  }
+  .attribution {
+    position: absolute;
+    bottom: -85%;
+    left: 17%;
+    color: black;
+    width: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */
