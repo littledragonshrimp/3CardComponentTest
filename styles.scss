@@ -57,7 +57,6 @@ article{
 }
 
 .block{
-    background-color: green;
     position: relative;
     button{
         position: absolute;
@@ -71,9 +70,10 @@ article{
         padding-right: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-
     }
 }
+
+
 
 
 
@@ -84,6 +84,11 @@ article{
     button {
         color: $orange;
     }
+    button:hover{
+        color: $white;
+        background-color: inherit;
+        border: 2px solid $white;
+    }
 }
 
 .SUV{
@@ -91,6 +96,11 @@ article{
     min-width: 15rem;
     button {
         color: $cyan;
+    }
+    button:hover{
+        color: $white;
+        background-color: inherit;
+        border: 2px solid $white;
     }
 }
 
@@ -101,6 +111,11 @@ article{
     button {
         color: $darkblue;
     }
+    button:hover{
+        color: $white;
+        background-color: inherit;
+        border: 2px solid $white;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -110,7 +125,7 @@ article{
         width: 70%;
     }
     .block{
-        min-height: 28rem;
+        min-height: 27rem;
 
         h1{
             margin-bottom: 2rem;
